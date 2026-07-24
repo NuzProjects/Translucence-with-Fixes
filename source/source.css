@@ -552,13 +552,16 @@ div.progressContainer_ce5f0d.progressIndicatorSurface_ce5f0d {
 /* =========================================================
    LOCAL OVERRIDES ON TOP OF THE PUSHED SOURCE
    ========================================================= */
-
+.wrapper_c19a55.replying__5126c {
+	border-color: hsl(156, 77.5%, 47.1%) !important;
+	box-shadow: 0px 0px 13px 4px hsla(156, 77.5%, 47.1%, 1) !important;
+}
 
 
 
 :root {
   /* APP ELEMENTS */
-  --app-bg: url(https://i.ibb.co/WNrbr1Yz/Alpine-Amnesia.png);
+  --app-bg: url(https://www.image2url.com/r2/default/images/1784074998913-f3e6ca43-b6ca-435a-b384-f94c7d554c92.png);
   --app-blur: 6px;
   --app-margin: 24px;
   --app-radius: 18px;
@@ -568,9 +571,9 @@ div.progressContainer_ce5f0d.progressIndicatorSurface_ce5f0d {
   --main-content-color: rgba(var(--main-rgb), var(--main-content-opacity));
   --sidebar-color: rgba(var(--main-rgb), var(--sidebar-opacity));
   /* ACCENT HSL AND TEXT COLOR SETTINGS */
-  --accent-hue: 260;
-  --accent-saturation: 83%;
-  --accent-lightness: 72%;
+  --accent-hue: 156;
+  --accent-saturation: 77.5%;
+  --accent-lightness: 47.1%;
   --accent-hsl: var(--accent-hue),calc(var(--accent-saturation) * var(--saturation-factor)),var(--accent-lightness);
   --accent-opacity: 0.8;
   --accent-text-color: hsl(0,0%,0%);
@@ -591,11 +594,12 @@ div.progressContainer_ce5f0d.progressIndicatorSurface_ce5f0d {
   --mention-hsl: var(--mention-hue),calc(var(--mention-saturation) * var(--saturation-factor)),var(--mention-lightness);
   --mention-opacity: 1;
   /* REPLY HSL COLOR SETTINGS */
-  --reply-hue: 328;
-  --reply-saturation: 79%;
-  --reply-lightness: 64%;
+  --reply-hue: 156;
+  --reply-saturation: 77.5%;
+  --reply-lightness: 47.1%;
   --reply-hsl: var(--reply-hue),calc(var(--reply-saturation) * var(--saturation-factor)),var(--reply-lightness);
   --reply-opacity: 1;
+   
   /* MESSAGE COLOR SETTINGS */
   --message-color: hsl(0,0%,0%,0.19);
   --message-color-hover: hsl(0,0%,0%,0.28);
@@ -617,9 +621,9 @@ div.progressContainer_ce5f0d.progressIndicatorSurface_ce5f0d {
   --input-height: 36px;
   --input-radius: calc(var(--input-height) / 2);
   /* CARD SETTINGS */
-  --card-color: hsl(0,0%,100%,0.14);
-  --card-color-hover: hsl(0,0%,100%,0.18);
-  --card-color-select: hsl(0,0%,100%,0.21);
+  --card-color: hsl(0,0%,0%,0.4);
+  --card-color-hover: hsl(0,0%,0%,0.5);
+  --card-color-select: hsl(0,0%,0%,0.7);
   --card-radius: var(--app-radius);
   --card-header-shadow: 0px 3px 9px 0px hsl(0,0%,0%,0.25);
   /* BUTTON SETTINGS */
