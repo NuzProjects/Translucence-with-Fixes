@@ -1,8 +1,8 @@
 /**
  * @name Translucence
- * @version 1.0.7
+ * @version 1.0.8
  * @description A translucent/frosted glass Discord theme
- * @author NCapnKitten
+ * @author CapnKitten
  *
  * @website http://github.com/CapnKitten
  * @source https://github.com/CapnKitten/BetterDiscord/blob/master/Themes/Translucence/css/source.css
@@ -12,11 +12,374 @@
 
 @import url(https://capnkitten.github.io/BetterDiscord/Themes/Translucence/css/source.css);
 
-/*
+
+
+/* unsorted */
+/* sign in */
+.authBox__921c5, .navRow__86e92 {
+  background-color: hsl(0,0%,0%, 0.4) !important;
+  backdrop-filter: blur(var(--app-blur)) !important;
+  -webkit-backdrop-filter: blur(var(--app-blur)) !important;
+  border-radius: 16px !important;
+}
+/* new group */
+/* fix corners */
+.content__5e434 {
+  border-radius: 16px !important;
+}
+
 /* =========================================================
-   VENCORD/EQUICORD FIXES
+   GENERAL FIXES
+   ========================================================= */
+
+/*
+   Contents
+   1. Activity, game overlay, and status
+   2. Profile effects, decorations, and pickers
+   3. Quests and profile panels
+   4. Friends, groups, and inboxes
+   5. Channels, roles, and text areas
+   6. Settings pages and popups
+   7. Vencord plugin card and shop
+*/
+
+/* ---------------------------------------------------------
+   1. ACTIVITY, GAME OVERLAY, AND STATUS
+   --------------------------------------------------------- */
+
+/* Activity privacy */
+.frameRounded__99961 {
+  background-color: hsl(0,0%,0%, 0.2);
+}
+/* Game overlay */
+.widgetSettingsContainer_ef8d95 {
+  background-color: hsl(0,0%,0%, 0.4);
+  border-radius: 16px;
+}
+.collapseable_ef8d95 {
+  background-color: hsl(0,0%,0%, 0.2);
+}
+.groupContainer_ef8d95, .mainCollapseableContainer_ef8d95 {
+    background-color: hsl(0,0%,0%, 0.4) !important;
+    border-radius: 16px;
+}
+/* Friends activity */
+.refresh-active-now .header__00943 {
+  background-color: transparent !important;
+}
+
+/* ---------------------------------------------------------
+   2. PROFILE EFFECTS, DECORATIONS, AND PICKERS
+   --------------------------------------------------------- */
+
+/* Profile effects */
+.profilePreviewContainer_e8605d {
+  background-color: hsl(0,0%,0%, 0.2);
+}
+.profilePreviewContainer_ee133f {
+  background-color: hsl(0,0%,0%, 0.2);
+}
+.theme-dark .placeholderUsername__62b8c {
+  background-color: hsl(0,0%,0%, 0.4);
+}
+.tileButton__4e9aa {
+  background-color: hsl(0,0%,0%, 0.4);
+  border-radius: 16px;
+}
+.inventoryControlsButton__042c9 {
+  background-color: hsl(0,0%,0%, 0.2);
+  border-radius: 16px;
+}
+.previewBox_c9911d {
+  background-color: hsl(0,0%,0%, 0.2);
+  border-radius: 16px;
+}
+.decorationPreview__00c46, .smallDecorationPreviewsContainer__00c46 {
+  background-color: hsl(0,0%,0%, 0.2);
+  border-radius: 16px;
+}
+.decorationGridItem__828af {
+  background-color: hsl(0,0%,0%, 0.2);
+  border-radius: 16px;
+  border: none;
+}
+.fontButton_fc7677.fontButtonLarge_fc7677 {
+  border-radius: 16px;
+  border: none;
+}
+.effectContainer_caa50c.effectContainerLarge_caa50c {
+  border-radius: 16px;
+  border: none;
+}
+.modalContent__39813 {
+  border-radius: 16px;
+  background-color: transparent !important;
+}
+.root__49fc1 .header__49fc1 {
+  box-shadow: none ;
+}
+.custom-user-profile-theme.user-profile-modal-v2 .inner_c0bea0 {
+  border-radius: 16px;
+}
+.outer_c0bea0 {
+  border-radius: 16px !important;
+}
+.previewSection__4671c {
+  background-color: transparent;
+}
+.pillItemSelected__9e06a {
+  background-color: hsl(0,0%,0%, 0.2);
+}
+.pillContainer__9e06a {
+  background-color: hsl(0,0%,0%, 0.1) !important;
+}
+.customColorPicker__459fb {
+  background-color: hsl(0,0%,0%, 0.4) !important;
+  backdrop-filter: blur(var(--app-blur)) !important;
+  -webkit-backdrop-filter: blur(var(--app-blur)) !important;
+  border-radius: 16px !important;
+}
+.option_edf440 {
+  background-color: hsl(0,0%,0%, 0.2);
+  border-radius: 16px;
+}
+.frameGridItem__2ed4c {
+  background-color: hsl(0,0%,0%, 0.2);
+  border-radius: 16px;
+}
+.sampleProfile_c9a5b2 {
+  background-color: transparent !important;
+}
+.innerContainer__82a4b {
+  background: hsl(0,0%,0%, 0.2) !important;
+  border-radius: 16px !important;
+}
+.effectGridItem_f9347f {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+  border-radius: 16px;
+}
+.presetEffectBackground_f9347f, .presetEffectImg_f9347f {
+  border-radius: 16px;
+}
+.container__82a4b {
+  background: transparent !important;
+}
+
+/* ---------------------------------------------------------
+   3. QUESTS AND PROFILE PANELS
+   --------------------------------------------------------- */
+
+/* Quests */
+.content__0d616 {
+  border-radius: 16px !important;
+}
+.borders_c4293b {
+  border-radius: 16px 16px 0 0 !important;
+}
+.header_feae96 {
+  background: transparent !important;
+}
+.buttonSection_a62174 {
+  background: transparent !important;
+}
+.shelfCardQuest__2b19e {
+  background-color: hsl(0,0%,0%, 0.4) !important;
+}
+/* Profile */
+.panels__5e434 {
+  border-radius: 16px !important;
+}
+.container__37e49 {
+  border-radius: 16px 16px 16px 16px !important;
+}
+
+/* ---------------------------------------------------------
+   4. FRIENDS, GROUPS, AND INBOXES
+   --------------------------------------------------------- */
+
+/* Server sidebar buttons */
+.card_aae012 {
+  border: none !important;
+  margin-top: 0px !important;
+  gap: 12px !important;
+  background-color: transparent !important;
+}
+/* New group creation */
+.friend_bbd192 {
+  border-radius: 16px !important;
+}
+/* Friends list hover */
+.peopleListItem_cc6179:hover {
+  border-radius: 16px;
+}
+.channel__972a0 {
+  border-radius: 16px;
+}
+/* Inboxes */
+.container__8cb2e {
+  background-color: hsl(0,0%,0%, 0.4) !important;
+  backdrop-filter: blur(var(--app-blur)) !important;
+  -webkit-backdrop-filter: blur(var(--app-blur)) !important;
+  border-radius: 16px !important;
+}
+.tutorial_d15d9e {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+  border-radius: 16px !important;
+}
+.tutorialIcon_d15d9e {
+  background-color: transparent !important;
+}
+.box__376cb {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+  border-radius: 0 0 16px 16px !important;
+}
+.channelHeader__5d903 {
+  background-color: transparent !important;
+}
+/* Ignored and blocked accounts */
+.card_a72ffc {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+  border-radius: 18px;
+}
+.header_a72ffc {
+    background-color: transparent !important;
+}
+.iconContainer_a72ffc {
+  background-color: transparent !important;
+}
+
+/* ---------------------------------------------------------
+   5. CHANNELS, ROLES, AND TEXT AREAS
+   --------------------------------------------------------- */
+
+/* Threads */
+.icon__1b24f {
+  background-color: transparent !important;
+}
+/* Channels and roles */
+.profileCard__5d7c9 {
+  background-color: hsl(0,0%,0%, 0.4) !important;
+  border-radius: 16px !important;
+}
+/* Authorize apps */
+.bodySpacerTop__8a031 {
+  padding-top: 0px !important;
+}
+/* Server icons */
+.headerIcon__553a5 {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+/* Getting started channel */
+.theme-dark .headerArtPlaceholder__553a5 {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+/* Channel text area */
+.channelTextArea__74017, .wrapper__44df5 {
+  background: rgba(var(--textarea-color), var(--textarea-alpha));
+  border: none;
+  border-radius: 32px;
+}
+.theme-dark .staticToolbar_bba883 {
+  border-radius: 16px 16px 0 0;
+}
+/* Role management */
+.scroller__53543 {
+  background-color: transparent !important;
+}
+.cardFolder__1a4ef {
+  background: transparent !important;
+}
+.settingCard__1a4ef.active__1a4ef {
+  background-color: hsl(0,0%,0%, 0.4) !important;
+}
+
+/* ---------------------------------------------------------
+   6. SETTINGS PAGES AND POPUPS
+   --------------------------------------------------------- */
+
+/* Activity alert popup */
+.embedCard_b99f57 {
+  background-color: hsl(0,0%,0%, 0.4) !important;
+  border-radius: 16px;
+}
+/* Slash command popup */
+.autocomplete__13533 {
+  background-color: hsl(0,0%,0%, 0.4) !important;
+  backdrop-filter: blur(var(--app-blur)) !important;
+  -webkit-backdrop-filter: blur(var(--app-blur)) !important;
+}
+/* "You're almost there" popup */
+.popoverGradientWrapper_d6f39b {
+  background-color: hsl(0,0%,0%, 0.4) !important;
+  backdrop-filter: blur(var(--app-blur)) !important;
+  -webkit-backdrop-filter: blur(var(--app-blur)) !important;
+}
+/* Nitro settings */
+.progressCircleBackground_ce5f0d {
+    fill: none;
+}
+/* Clipping settings */
+.container_f89b2c {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* ---------------------------------------------------------
+   7. VENCORD PLUGIN CARD AND SHOP
+   --------------------------------------------------------- */
+
+/* Vencord new-plugin card */
+.vc-addon-card {
+  background-color: transparent !important;
+  border-radius: var(--card-radius) !important;
+  border: none;
+}
+.visual-refresh .vc-changelog-new-plugins-section {
+  border: none !important;
+}
+.popover_d6f39b {
+  background-color: hsl(0,0%,0%, 0.3) !important;
+  backdrop-filter: blur(var(--app-blur)) !important;
+  -webkit-backdrop-filter: blur(var(--app-blur)) !important;
+  border-radius: 18px;
+}
+/* Shop */
+.filterOverlay__1feb0 {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+}
+.filterBar__11877 {
+  background-color: transparent !important;
+}
+.container__0f179 {
+  background-color: transparent !important;
+}
+.leftRail__863fd {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+}
+
+/* =========================================================
+   VENCORD / EQUICORD FIXES
    Delete this whole block if you're not on Vencord
    ========================================================= */
+
+/*
+   Contents
+   1. Profiles, plugin settings, and general cards
+   2. Emoji, member, and server UI
+   3. Buttons, activity, and account standing
+   4. Uploads, search, keybinds, and forum UI
+   5. Accessibility, onboarding, and voice widgets
+   6. Profiles, roles, and server settings
+   7. Soundboard, Nitro, gifts, games, and quests
+   8. Generic containers, buttons, popouts, and invites
+   9. Theme variables and color overrides
+*/
+
+/* ---------------------------------------------------------
+   1. PROFILES, PLUGIN SETTINGS, AND GENERAL CARDS
+   --------------------------------------------------------- */
 
 /* private profile popout - corners weren't matching the card radius */
 [class*="profilePopout__"] {
@@ -37,7 +400,7 @@
 }
 /* new plugins section background */
 .vc-changelog-new-plugins-section {
-  background-color: hsl(0,0%,0%, 0.4) !important;
+  background-color: transparent !important;
 }
 /* settings title - white for contrast */
 .vc-h5.vc-special-title {
@@ -53,25 +416,55 @@
 }
 .visual-refresh .vc-plugin-stats.vc-stockplugins-stats-card {
   background-color: hsl(0,0%,0%, 0.4) !important;
+  border-radius: 18px;
   border: none !important;
 }
 .vc-card-base.vc-card-primary {
   background-color: hsl(0,0%,0%, 0.4) !important;
   border-radius: var(--card-radius);
 }
-/* "Open Themes Folder / Load missing Themes / Edit QuickCSS" panel -
-   at the correct dark transparency, everything else in this section
-   now matches it (#00000066 = hsl(0,0%,0%,0.4)) */
+/* "Open Themes Folder / Load missing Themes / Edit QuickCSS" panel - matches the dark card tone used elsewhere */
 .vc-card-base.vc-card-primary.vc-settings-quickActions-card {
-  background-color: hsl(0,0%,0%, 0.4) !important;
+  background-color: hsl(0,0%,0%, 0.2) !important;
 }
-/* theme filter/select dropdown on Themes settings page -
-   was fully transparent, now matches the same dark card tone */
+
+/* ---------------------------------------------------------
+   2. EMOJI, MEMBER, AND SERVER UI
+   --------------------------------------------------------- */
+/* Theme filter/select dropdown - was fully transparent, now matches the dark card tone */
 .container_72c38.selectFieldContainer_0edde,
 .wrapper_a16aea.wrapper__72c38 {
   background-color: hsl(0,0%,0%, 0.4) !important;
 }
-
+/* emoji picker */
+.wrapper__14245 {
+  position: sticky;
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+/* member list */
+.mainTableContainer_fa2640, .movedTable_fa2640 {
+  background-color: transparent;
+}
+/* role icon */
+.icon_d8f25b {
+  background-color: transparent;
+}
+/* @everyone */
+.container_d8f25b {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+}
+/* access */
+.joinOptions__959cb {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+}
+.rules__92677 {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+}
+div.pill__33d66.pill_f7c056 {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+}
 /* boost */
 div.tooltipContent_c36707 {
   background-color: hsl(0,0%,0%, 0.2) !important;
@@ -84,6 +477,92 @@ div.containerCompact__6c253 {
   -webkit-backdrop-filter: blur(var(--app-blur)) !important;
 }
 
+/* ---------------------------------------------------------
+   3. BUTTONS, ACTIVITY, AND ACCOUNT STANDING
+   --------------------------------------------------------- */
+/* Server web page */
+.checklist_bbb935 {
+  background: hsl(0,0%,0%, 0.4) !important;
+  border-radius: 18px;
+}
+.container_d71b96 {
+  border-radius: 18px;
+}
+
+/* button background transparent */
+div.buttonContainer__432f4 {
+  background-color: transparent !important;
+}
+div.actionButtons_cc1819.base__5cd44.focusSensitive__5cd44 {
+  background-color: transparent !important;
+}
+div.buttonInner_aec7ab {
+  background-color: transparent !important;
+}
+
+/* game activity transparent */
+div.popout__af3b89 {
+  background: hsl(0,0%,0%, 0.4) !important;
+  backdrop-filter: blur(var(--popout-blur)) !important;
+  -webkit-backdrop-filter: blur(var(--popout-blur)) !important;
+}
+/* boost page */
+div.boostRow__1bfce {
+  background-color: transparent !important;
+}
+/* account standing */
+div.marker_d878e7 {
+  background-color: hsl(0,0%,0%, 0.1) !important;
+  backdrop-filter: blur(var(--app-blur)) !important;
+  -webkit-backdrop-filter: blur(var(--app-blur)) !important;
+}
+div.empty_d878e7 {
+  background-color: hsl(0,0%,0%, 0.4) !important;
+  backdrop-filter: blur(var(--app-blur)) !important;
+  -webkit-backdrop-filter: blur(var(--app-blur)) !important;
+}
+.dropdown_edf232 {
+  background-color: transparent !important;
+}
+div.itemDetail_edf232 {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+}
+div.headerIconWrapper_edf232 {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+}
+.timestamp_edf232 {
+  background-color: transparent !important;
+}
+.classificationPolicyCard_a48d6b {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+}
+.classificationPolicyCardIcon_a48d6b {
+  background-color: transparent !important;
+}
+/* Family Center */
+.group__0624f {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+}
+.listContainer_bdbb1b {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+}
+.aside__4d307 {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+}
+
+/* ---------------------------------------------------------
+   4. UPLOADS, SEARCH, KEYBINDS, AND FORUM UI
+   --------------------------------------------------------- */
+
+/* emoji upload */
+.toolbar_ab2592 {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.animatedInfoContainer_ab2592 {
+  background-color: transparent !important;
+}
 /* emoji react */
 div.categoryItemDefaultCategory_b9ee0c.categoryItem_b9ee0c.categoryItemDefaultCategory_b9ee0c {
   background-color: transparent !important;
@@ -110,22 +589,56 @@ div.card__84e3e.card_f215b9.clickable__84e3e {
 /* forum post banner - light transparency, round top corners only */
 div.banner__183e8.clickable__183e8 {
   background-color: hsl(0,0%,0%, 0.05) !important;
-  border-radius: var(--card-radius) var(--card-radius) 0 0 !important;
+  border-radius: 16px !important;
 }
 /* new topics bar - fix transparency, dark text for contrast on green */
 div.newTopicsBarContainer__0f481 {
   background-color: #1BD58BCC !important;
   opacity: 1 !important;
 }
-div.newTopicsBarContainer__0f481 * {
-  color: #000000 !important;
-}
+
 div.container_e97453 {
   background-color: hsl(0,0%,0%, 0.2) !important;
 }
+/* integrations */
+div.card_dc2e44.card_b5dd01.cardPrimary_b5dd01 {
+  border-radius: 18px !important;
+}
+div.header_eafb9c {
+  border-radius: 18px;
+}
+div.flex__7c0ba.vertical_abf706.justifyStart_abf706.alignStretch_abf706.noWrap_abf706 {
+  border-radius: 18px !important;
+}
+div.card_eafb9c.card_b5dd01.cardPrimary_b5dd01 {
+  border-radius: 18px !important;
+}
+/* server insights */
+div.analyticsCard__0dfec {
+  background-color: hsl(0,0%,0%, 0.4) !important;
+  border-radius: 18px !important;
+}
+/* onboarding */
+div.onboardingStepContainer__28e57 {
+  background-color: hsl(0,0%,0%, 0.4) !important;
+}
+div.review_a9b452 {
+  background-color: hsl(0,0%,0%, 0.4) !important;
+  border-radius: 18px 18px 0 0 !important;
+}
+div.onboardingStepContainer__28e57:last-child {
+  border-radius: 0 0 18px 18px !important;
+}
+div.iconContainer__28e57 {
+  background-color: transparent !important;
+}
+/* ---------------------------------------------------------
+   5. ACCESSIBILITY, ONBOARDING, AND VOICE WIDGETS
+   --------------------------------------------------------- */
+
 /* accessibility settings chat preview - fully transparent */
 div.preview__6b741 {
-  background-color: hsl(0,0%,0%, 0) !important;
+  background-color: transparent !important;
   backdrop-filter: blur(var(--app-blur)) !important;
   -webkit-backdrop-filter: blur(var(--app-blur)) !important;
   border-radius: var(--card-radius) !important;
@@ -140,8 +653,8 @@ div.container_e9b3cb {
   background-color: hsl(0,0%,0%, 0.4) !important;
 }
 
-/* more stuff me just doin not vencord */
-/* voice channel wdiget thingy */
+/* Standalone Discord UI fixes (not Vencord-specific) */
+/* Voice-channel widget */
 span.total__260e1 {
   background-color: hsl(0,0%,0%, 0.2) !important;
 }
@@ -159,7 +672,7 @@ div.reactionTooltip_bbcccb {
   -webkit-backdrop-filter: blur(var(--app-blur)) !important;
   border-radius: var(--card-radius) !important;
 }
-/* hover on cards in the forum thing */
+/* Hovered forum cards */
 div.container_faa96b.mainCard_f369db.isOpen_faa96b {
   background-color: hsl(0,0%,0%, 0.5) !important;
   border-radius: var(--popout-radius) !important;
@@ -168,12 +681,11 @@ div.container_faa96b.mainCard_f369db.isOpen_faa96b {
 }
 
 
-/* server guide */
+/* Server guide */
 div.row_d13feb {
   background-color: hsl(0,0%,0%, 0.4) !important;
 }
 /* invite link next to server guide */
-.guildInviteContainer__083ae,
 div.container_dca174 {
   background-color: hsl(0,0%,0%, 0.4) !important;
 }
@@ -200,8 +712,7 @@ div.container__50e22 {
 /* edit-role modal header area */
 div.titleContainer_e29cd7.titleElevated_e29cd7,
 div.header_c6bf1b.stickyHeader_c6bf1b {
-  background-color: hsl(0,0%,0%, 0.4) !important;
-  border-radius: var(--card-radius) !important;
+  background-color: transparent !important;
 }
 div.header_c6bf1b {
   background-color: hsl(0,0%,100%, 0.00) !important;
@@ -209,6 +720,10 @@ div.header_c6bf1b {
   -webkit-backdrop-filter: blur(var(--app-blur)) !important;
   border-radius: var(--card-radius) !important;
   width: calc(100% + 12px) !important;
+}
+/* member management button */
+.button__71c22 {
+  background-color: transparent !important;
 }
 div.titleContainer__81b3e {
   background-color: transparent !important;
@@ -219,9 +734,9 @@ div.titleContainer__81b3e {
   background-color: hsl(0,0%,0%, 0.4) !important;
   border-radius: var(--card-radius) !important;
 }
-/* role icon preview container */
+/* Role icon preview container and shop item */
 [class*="previewContainer_"] {
-  background-color: hsl(0,0%,0%, 0.4) !important;
+  background-color: transparent !important;
 }
 /* server icon/avatar uploader square */
 [class*="imageUploaderInner_"],
@@ -232,6 +747,7 @@ div.titleContainer__81b3e {
 [class*="inputWrapper__"],
 [class*="container_b08af5"] {
   background-color: hsl(0,0%,0%, 0.4) !important;
+  border-radius: 18px;
 }
 /* icon container gradient background */
 .iconContainer__0ecc4 foreignObject {
@@ -250,6 +766,30 @@ img.guildIcon__0fa6d {
 }
 .panel_b08638 {
   background: none !important;
+}
+/* Server tag */
+div.container__4e849 {
+  background-color: hsl(0,0%,0%, 0.4) !important;
+  border-radius: 18px !important;
+}
+div.enableSwitchContainer_a84c50 {
+  background-color: transparent !important;
+}
+/* booster perks */
+div.editVanityUrlCard_b21bbb.card_b5dd01.cardPrimary_b5dd01 {
+  border-radius: 18px !important;
+}
+/* access */
+.card_f44397,
+.iconMask_f44397 {
+  background-color: hsl(0,0%,0%, 0.4) !important;
+  border-radius: 18px;
+}
+div.pill__33d66 {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+}
+div.guildSection_d5cd2d {
+  background-color: transparent !important;
 }
 /* =========================================================
    SOUNDBOARD
@@ -309,19 +849,7 @@ div.addGamePopout__254c2 {
    QUESTS
    ========================================================= */
 
-.visual-refresh .button__201d5.grow__201d5 {
-  padding-left: 8px !important;
-  padding-right: 8px !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.visual-refresh .lookFilled__201d5.colorBrand__201d5 {
-  padding: 0 !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .visual-refresh .upsellsContainer__8f3cb {
   background-color: hsl(0,0%,0%, 0.4) !important;
   border-radius: var(--card-radius);
@@ -336,15 +864,9 @@ div.addGamePopout__254c2 {
 .visual-refresh [data-testid="quest-bar-container"] .questProgressCopy_ae7810 > div {
   opacity: 1 !important;
 }
-.visual-refresh [data-testid="quest-bar-container"] [inert] .headerText__1ba69 {
-  visibility: hidden !important;
-}
 .visual-refresh .postEnrollmentBackground__24e2c {
   background: transparent !important;
   background-image: none !important;
-}
-.visual-refresh .content__0d616 {
-  background-color: hsl(0,0%,0%,0.4) !important;
 }
 /* keeps quest reward popup button green */
 .button_a22cb0.overlay-secondary_a22cb0 {
@@ -369,26 +891,18 @@ div.addGamePopout__254c2 {
 
 .container__60fa3 {
   background-color: var(--card-color) !important;
+  border: none !important;
   border-radius: var(--card-radius);
-  border: none;
-  border-inline-start: 4px solid;
-}
-.container__60fa3 {
-  border-inline-start: none !important;
-}
-/* no clue, catches leftover blue embeds */
-.container_f69538.embed_f69538,
-[style*="background-color: #14295259"],
-[style*="background: #14295259"] {
-  background-color: hsl(0,0%,0%, 0.4) !important;
 }
 .visual-refresh .cardPrimary_b5dd01 {
-  background-color: transparent !important;
+  background-color: hsla(0, 0%, 0%, 0.4) !important;
+  border-radius: 16px;
 }
 [style*="background-color: #00000066"],
 [style*="background: #00000066"] {
   background-color: hsl(0,0%,0%, 0.4) !important;
 }
+.container_f69538.embed_f69538,
 [style*="background-color: #14295259"],
 [style*="background: #14295259"],
 [style*="background-color: rgb(20, 41, 89)"],
@@ -432,6 +946,8 @@ div.addGamePopout__254c2 {
 }
 .hoverButton__06ab4:hover {
   background: transparent !important;
+  color: #252525 !important;
+
 }
 .closeButton__23c09 .button_a22cb0 {
   padding: 10px !important;
@@ -467,7 +983,10 @@ div.addGamePopout__254c2 {
   color: black !important;
   font-weight: 600 !important;
 }
-
+/* icon for integrations server settings */
+.iconWrapper__4a3a5 {
+  background-color: transparent;
+}
 .hoverButtonGroup__06ab4{
   background-color: #19c581 !important;
   border-radius: 18px !important;
@@ -475,14 +994,29 @@ div.addGamePopout__254c2 {
 .hoverButton__06ab4 {
   color: #000000 !important;
 }
-.hoverButton__06ab4:hover {
-  color: #252525 !important;
-}
 .wrapper_f7ecac {
   background-color: transparent !important;
   border-radius: 18px;
 }
+/* safety setup server settings */
+div.backgroundModifierContainer_d96a9c.transparent_d96a9c {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+}
+/* community enable */
+.tableContainer__50e4e {
+  background-color: transparent !important;
+}
+/* Onboarding preview */
+div.upsellPreview_d9161f.spacingLarge_d9161f {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+}
+.channelIconContainer_c66e86, .rulesIconContainer_c66e86, .tagIconContainer_c66e86 {
+  background-color: transparent !important;
+}
 
+div.previewListItem_d9161f.selected_d9161f {
+  background-color: var(--background-mod-normal);
+}
 .button_f7ecac.dangerous_f7ecac {
   color: red !important;
 }
@@ -527,6 +1061,99 @@ div.addGamePopout__254c2 {
   opacity: 1 !important;
 }
 
+/* =========================================================
+    DENJI'S EXTRA FIXES
+   ========================================================= */
+
+.helperTextContainer__5a838 {
+    margin-top: 6px;
+}
+
+.textArea__5a092::placeholder {
+    font-size: 12px;
+}
+
+.clickableContainer_d96a9c {
+    background-color: transparent;
+}
+
+.backgroundModifierContainer_d96a9c {
+    background-color: transparent;
+    border-radius: 18px;
+}
+
+.container_d96a9c {
+    border-radius: 18px;
+}
+
+.collapseable__2d143 {
+    border-radius: 18px !important;
+}
+
+.collapseable__2d143.toggled__2d143:active {
+    background-color: hsla(0, 0%, 0%, 0.144);
+}
+
+.backgroundModifierContainer_d96a9c:hover:not(.disabled_d96a9c):not(.noAction_d96a9c) {
+    background-color: hsla(0, 0%, 0%, 0.144);
+}
+
+.backgroundModifierContainer_d96a9c.selected_d96a9c {
+    background-color: hsla(0, 0%, 0%, 0.267);
+}
+
+.wrapper__72c38 {
+    height: auto !important;
+}
+
+.input__0ed4f {
+    margin-left: 8px;
+}
+
+img[alt="Wumpus Waving"] {
+    margin-bottom: -9px;
+}
+
+.container_a14595 {
+    background-color: hsla(0, 0%, 0%, 0.212);
+}
+
+.backgroundGradient__8e688 {
+    background: none;
+}
+
+.inner_ab8609 {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+}
+
+.container__04bc3 {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+}
+
+.container_ceab1a {
+  background-color: hsl(0,0%,0%, 0.2) !important;
+}
+
+.container_d9246e {
+  background-color: hsl(0,0%,0%, 0.2) !important; 
+}
+
+.smallCard__250d5 {
+  background-color: hsl(0,0%,0%, 0.3) !important; 
+}
+
+.descriptionFade__250d5 {
+  background: none !important;
+}
+
+.orbIconAligned__85064 {
+    vertical-align: middle !important;
+}
+
+.mockInput__4e635 {
+  background-color: hsl(0,0%,0%, 0.35) !important;
+  border-radius: 20px;
+}
 
 /* =========================================================
    MISC ONE-OFFS
@@ -536,8 +1163,7 @@ div.addGamePopout__254c2 {
   background-color: hsl(0,0%,0%,0.4) !important;
 }
 .content__5e434 {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius: 10px 8px 8px 10px;
 }
 
 
